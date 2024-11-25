@@ -6,7 +6,6 @@
 
 body {
   font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
 }
 
 /* HEADER */
@@ -75,14 +74,13 @@ button {
 /* JUMBOTRON */
 #jumbotron {
   margin: 0 auto;
-  height: 880px;
+  min-height: 880px;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-image: url("../img/jumbo.png");
-  
 }
 
 .container-jumbo {
@@ -174,8 +172,20 @@ h1 {
   font-size: 66px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
+.sub-container-M > h2, p{
+  padding: 0 97px;
+}
+
 .jumbotron-buttons {
   padding: 20px 42px;
+  font-size: 22px;
+}
+
+section {
   font-size: 22px;
 }
 
@@ -211,15 +221,16 @@ h1 {
 .sub-container-L {
   height: 100%;
   flex-basis: 60%;
-  /* DEBUG */
-  background-color: #1e90ff;
+  align-content: center;
 }
 
 .sub-container-M {
   height: 100%;
   flex-basis: 40%;
-  /* DEBUG */
-  background-color: #ffc0ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* DEBUG&MORE */
