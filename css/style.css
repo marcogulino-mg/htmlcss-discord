@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* HEADER */
@@ -28,15 +28,14 @@ header {
 }
 
 /* LOGO */
-.logo{
+.logo {
   padding: 10px;
   flex-basis: 20%;
   height: 100%;
   background-repeat: no-repeat;
   background-image: url("../img/logo.svg");
   background-size: contain;
-  display: flex;
-  align-items: center;
+  background-position: center;
 }
 
 /* MENU */
@@ -134,7 +133,7 @@ footer {
 }
 
 footer > hr {
-  width: 100%;
+  width: 50%;
 }
 
 .bottom-footer {
@@ -145,7 +144,6 @@ footer > hr {
   justify-content: space-between;
   /* DEBUG */
   height: 110px;
-  background-color: #7fffd0;
 }
 
 .logo-footer {
@@ -154,16 +152,31 @@ footer > hr {
   background-color: #febac2;
 }
 
-.button-footer {
-  padding: 0 7px;
-  /* DEBUG */
-  background-color: #febac2;
+img[alt="italian flag"] {
+  width: 25px;
 }
 
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.container-footer-XS > ul {
+  list-style: none;
+  padding: 105px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-top-footer > li:first-of-type > a {
+  color: #8ea2e0;
+}
 
 /* GENERIC CLASSES */
 /* FONTS&TEXTS */
-a, #jumbotron {
+a,
+#jumbotron {
   color: #ffffff;
   text-decoration: none;
 }
@@ -176,7 +189,13 @@ h2 {
   font-size: 40px;
 }
 
-.sub-container-M > h2, p{
+h3 {
+  color: #8ea2e0;
+  font-size: 35px;
+}
+
+.sub-container-M > h2,
+p {
   padding: 0 97px;
 }
 
@@ -189,6 +208,15 @@ section {
   font-size: 22px;
 }
 
+span {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.container-footer-S > span {
+  font-size: 18px;
+}
+
 /* CONTAINER SECTION */
 .container-section {
   height: 100%;
@@ -199,22 +227,26 @@ section {
 .container-section-XXL {
   flex-basis: 100%;
   height: 100%;
-  /* DEBUG */
-  background-color: #218b21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .container-footer-S {
+  padding: 95px 22px;
   flex-basis: 40%;
   height: 100%;
-  /* DEBUG */
-  background-color: #f08180;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ffffff;
 }
 
 .container-footer-XS {
   flex-basis: 20%;
   height: 100%;
-  /* DEBUG */
-  background-color: #20b3aa;
 }
 
 /* SUB-CONTAINER SECTION */
@@ -238,11 +270,18 @@ section {
   border: 2px dotted #000000;
 }
 
-.grey {
+.bg-grey {
   background-color: #d3d3d3;
 }
 
-.reverse-BW {
+.bg-blue {
+  background-color: #8ea2e0;
+}
+
+.white-font {
   color: white;
+}
+
+.reverse-BW {
   background-color: #000000;
 }
